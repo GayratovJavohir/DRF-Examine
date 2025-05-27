@@ -1,0 +1,33 @@
+1.DRF'da Basic Authentication va Token Authentication nima va qanday ishlaydi? misollar
+keltiring
+
+1.Basic Auth:
+Foydalanuvchi har safar username va password yuboradi.
+Token Auth:
+Foydalanuvchi bir marta token oladi, keyin token bilan so‘rov yuboradi.
+
+
+2.JWT Authentication ni Token Authentication ga nisbatan ganday afzalliklarga ega? JWT
+ishlash tartibini oddiy token asosidagi tizimdan qanday farg giladi?
+
+2.Serverda token saqlanmaydi, o‘zida ma’lumot bor, oson kengaytiriladi.
+Oddiy token esa serverda saqlanadi va tekshiriladi.
+
+
+3.DRF'da Filter klassining maqsadi nima va uni API view'da qanday qo'llaysiz?
+
+3.Ma'lum maydonlar bo‘yicha so‘rovlarni filtrlash uchun ishlatiladi.
+
+
+4.DRF'da permissions ni qanday amalga oshirib, faqat autentifikatsiyadan o'tgan
+foydalanuvchilarga ruxsat berish mumkin? Faqat superuserga ruxsat beradigan maxsus
+permission class ni misol gilib ko'rsating.
+
+4.IsAuthenticated — faqat login qilinganlarga ruxsat.
+Superuserga ruxsat: maxsus class yozib, user.is_superuser tekshiriladi.
+
+
+5.JWT token dagi access token va refresh token farqi nimada? misol keltiring
+
+5.Access token qisqa muddat ishlaydi, API chaqirish uchun.
+Refresh token uzun muddat, yangi access token olish uchun.
